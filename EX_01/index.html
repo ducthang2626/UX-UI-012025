@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Food</title>
+    <style>
+        /* Reset mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 100%;
+            max-width: 1300px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .text-column {
+            width: 50%;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .image-column,
+        .text-column-about {
+            text-align: center;
+        }
+
+        .text-column-about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-column {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .column-Excellent,
+        .column-Delivery,
+        .column-Fast{
+            width: 33%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: green;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            color: aliceblue;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: forestgreen;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: forestgreen;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1024px) {
+            .row {
+                gap: 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                width: 140px;
+                height: 45px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                gap: 15px;
+            }
+
+            .text-column,
+            .image-column {
+                width: 45%;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            button {
+                width: 130px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .row {
+                gap: 10px;
+            }
+
+            .text-column,
+            .image-column {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            h2,
+            h3 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: justify;
+            }
+
+            button {
+                width: 120px;
+                height: 35px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <div class="row">
+            <div class="text-column">
+                <h1 style="margin-bottom: 20px;">Tasty Food</h1>
+                <h2 style="margin-bottom: 20px;">Try the best food of the week.</h2>
+                <button>View Menu</button>
+            </div>
+            <div class="image-column">
+                <img src="https://levanquang-3112.github.io/Tasty-food/image/home.png" alt="Tasty Food">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image-column">
+                <img src="https://levanquang-3112.github.io/Tasty-food/image/about.jpg" alt="About Us">
+            </div>
+            <div class="text-column-about">
+                <h3>About us</h3>
+                <p><strong>We cook the best tasty food</strong></p>
+                <p>We cook the best food in the entire city, with excellent customer service, the best meals, and at the
+                    best price, visit us.</p>
+                <button>Explore History</button>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="text-column-about">
+                <h3>About us</h3>
+                <p><strong>We cook the best tasty food</strong></p>
+                <div class="column">
+                    <div class="column-Excellent">
+                        <div class="image-column-Excellent">
+                            <img src="image/ExcellentFood.jpg" alt="About Us">
+                        </div>
+                        <p><strong>Excellent food</strong></p>
+                        <p>We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+                    <div class="column-Fast">
+                        <div class="image-column-Fast">
+                            <img src="image/FastFood.jpg" alt="About Us">
+                        </div>
+                        <p><strong>Fast food</strong></p>
+                        <p>We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+                    <div class="column-Delivery">
+                        <div class="image-column-Delivery">
+                            <img src="image/Delivery.jpg" alt="About Us">
+                        </div>
+                        <p><strong>Delivery</strong></p>
+                        <p>We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="text-column-about">
+                <h3>Special</h3>
+                <p><strong>Menu of the week</strong></p>
+                <div class="column">
+                    <div class="column-Excellent">
+                        <div class="image-column-Excellent">
+                            <img src="https://levanquang-3112.github.io/Tasty-food/image/plate1.png" alt="About Us">
+                        </div>
+                        <p><strong>Barbecue salad</strong></p>
+                        <p>Delicious dish</p>
+                    </div>
+                    <div class="column-Fast">
+                        <div class="image-column-Fast">
+                            <img src="https://levanquang-3112.github.io/Tasty-food/image/plate2.png" alt="About Us">
+                        </div>
+                        <p><strong>Salad with fish</strong></p>
+                        <p>Delicious dish</p>
+                    </div>
+                    <div class="column-Delivery">
+                        <div class="image-column-Delivery">
+                            <img src="  https://levanquang-3112.github.io/Tasty-food/image/plate3.png" alt="About Us">
+                        </div>
+                        <p><strong>Spinach salad</strong></p>
+                        <p>Delicious dish</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+
+</html>
